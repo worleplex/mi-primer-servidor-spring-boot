@@ -9,82 +9,158 @@
     <meta name="author" content="julian gerardo izaguirre menchaca">
     <meta name="robots" content="index, follow">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        * {
+            font-family: Arial, "Arial Black", "Times New Roman";
+        }
+        h1 {
+            font-size: 30px !important;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Julián Gerardo Izaguirre Menchaca</h1>
-        <h2>subtitulo temporal</h2>
-        <p>ingeniero en software | alumno | soy bueno en  ciberseguridad me se la mayoria de virus</p>
-        <nav>
-            <a href="index.html">casa</a>
-            <a href="hobbies.html">mis hobbies</a>
-        </nav>
-        <nav>
-            <a href="#sobre-mi">sobre mi</a>
-            <a href="#habilidades">habilidades</a>
-            <a href="#formacion">formacion</a>
-            <a href="#proyecto">proyectos</a>
-            <a href="#contacto">contacto</a>
-        </nav>
-    </header>
-    <main>
-        <section id="sobre-mi">
-            <h2>sobre mi</h2>
-            <p>soy un <strong>ingeniero en isw</strong> y soy una persona que vive lejos de la esciela</p>
-            <img src="yo.jpg" alt="foto de perfil del guapo de julian">
-        </section>
-        <section id="habilidades">
-            <h2>habilidades </h2>
-            <p>mis habilidades son buena memoria, tengo logica, y cuando me inspiro nadie me puede ganar
-                y también me deprimo rapido</p>
-            <ul>
-                <li>java</li>
-                <li>js</li>
-                <li>python</li>
-            </ul>
-            <p>estas son las que mas domino, en orden:</p>
+<header>
+    <h1 id="titulo-principal" class="title">Portafolio Personal</h1>
+    <!-- esto no lo ocupo son datos sobre mi tambien y ya tengo la sección especial para eso
+    <h2>subtitulo temporal</h2>
+    <p>ingeniero en software | alumno | soy bueno en  ciberseguridad me se la mayoria de virus</p>
+    -->
+    <nav>
+        <a href="index.html">casa</a>
+        <a href="hobbies.html">mis hobbies</a>
+        <a href="#sobre-mi">sobre mi</a>
+        <a href="#habilidades">habilidades</a>
+        <a href="#formacion">formacion</a>
+        <a href="#proyecto">proyectos</a>
+        <a href="#contacto">contacto</a>
+    </nav>
+</header>
+<main>
+    <section id="sobre-mi">
+        <!-- voy aplicar un viejo truco de mi prepa para poner la imagen a un lado con el div -->
+        <div class="sobre-mi-imagen">
+            <h2 class="destacado">Sobre mí:</h2>
+            <p class="destacado">
+                Soy <strong>Julián Gerardo Izaguirre Menchaca</strong>, nací de Ciudad Obregón y estudiante de
+                Ingeniería en Software en el ITSON, mi interés por la tecnología es desde la infancia, jugando videojuegos
+                y explorando plataformas digitales, durante la preparatoria elegí la carrera de programación en el 37
+                y descubrí que disfruto crear soluciones, lo que me impulsó a especializarme en esta área,
+                elegí el ITSON por su oferta de becas, el prestigio de la carrera y por ser una uni local
+                con buenas recomendaciones, ya llevo 2 años en la uni y me siento preparado.
+            </p>
+        </div>
+        <img src="yo.jpg" alt="foto de perfil del guapo de julian" class="mifotito">
+    </section>
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <p>
+            como estudiante de isw tengo una buena capacidad de análisis y lógica para resolver problemas,
+            constancia para completar proyectos de principio a fin son los escolares, también me gustan los
+            trabajos que requiere concentración y pensamiento creativo.
+        </p>
+        <p>Lenguajes de programación con los que he trabajado:</p>
+        <ul>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>SQL</li>
+        </ul>
+        <p>Ordenados según mi nivel de dominio, de mayor a menor:</p>
+        <ol>
+            <li>Java</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>JavaScript</li>
+        </ol>
+    </section>
+    <section id="formacion">
+        <h2>Formación y experiencia</h2>
+        <h3>Pasos para crear una app web</h3>
+        <ol>
+            <li>Análisis de requerimientos</li>
+            <li>Diseño de la solución</li>
+            <li>Desarrollo y codificación</li>
+            <li>Pruebas y despliegue</li>
+        </ol>
+        <h3>Camino académico y experiencia</h3>
+        <table class="tabla-bonita">
+            <tr>
+                <th>Institución</th>
+                <th>Nivel / Puesto</th>
+                <th>Tiempo</th>
+            </tr>
+            <tr>
+                <td>Escuela Melchor Ocampo</td>
+                <td>Estudiante</td>
+                <td>6 años</td>
+            </tr>
+            <tr>
+                <td>Federal #2</td>
+                <td>Estudiante</td>
+                <td>3 años</td>
+            </tr>
+            <tr>
+                <td>CBTis 37</td>
+                <td>Estudiante de programación</td>
+                <td>3 años</td>
+            </tr>
+            <tr>
+                <td>ITSON</td>
+                <td>Estudiante de ISW</td>
+                <td>2 años y medio (en curso)</td>
+            </tr>
+            <tr>
+                <td>Grupo Cajeme</td>
+                <td>Prácticas profesionales</td>
+                <td>4 meses</td>
+            </tr>
+        </table>
+    </section>
+    <section id="proyecto">
+        <h2>Mis proyectos:</h2>
+        <article class="proyecto-item">
+            <h3>Proyecto integrador de software</h3>
+            <p>Tienda en línea</p>
             <ol>
-                <li>java</li>
-                <li>js</li>
-                <li>python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
             </ol>
-        </section>
-        <section id="formacion">
-            <h2>formacion y experiencia</h2>
-            <h3>pasos para crear una app web</h3>
-            <ol>
-                <li>analisis de requerimientos</li>
-                <li>diseño de la solucion</li>
-                <li>desarrollo y codificacion</li>
-                <li>prueabs y despliegue</li>
-            </ol>
-        </section>
-        <section id="proyecto">
-            <h2>mis proyectos</h2>
-            <h3>proyecto integrador de software</h3>
-            <ul>
-                <li>tienda en linea
-                    <ol>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                    </ol>
-                </li>
-            </ul>
-            <a href="https://github.com/worleplex" target="_blank" rel="noopener">ver repositorio de github</a>
-        </section>
-        <article id="contacto">
-            <h2>contacto</h2>
-            <p>puedes contactarme en los siguientes canales</p>
-            <a href="mailto:julian.izaguirre262758@potros.itson.edu.mx">julian izaguirre correo</a>
-            <a href="tel:+526442514758">Mi telefono es +52 6442514758 </a>
-            <a href="https://wa.me/526442514758?text=Hola me comunico desde el itson">manda whatsapp</a>
-            <a href="https://github.com/worleplex" target="_blank" rel="noopener">mi github</a>
-            <a href="https://www.linkedin.com/in/julian-gerardo-izaguirre-menchaca-2a6549433" target="_blank" rel="noopener">mi linkedin</a>
+            <a href="https://github.com/worleplex/JhSublimaciones2006.git" target="_blank" rel="noopener">ver repositorio de github</a>
         </article>
-    </main>
-    <footer>
-        <p>&copy; 2026 Derechos reservados julian gerardo</p>
-    </footer>
+        <article class="proyecto-item">
+            <h3>Sistema Steelcore Fitness</h3>
+            <p>Sistema de gestión para gimnasio</p>
+            <ol>
+                <li>Java</li>
+            </ol>
+            <a href="https://github.com/luisbeltran269817/proyecto_diseno_steelcore_fitness.git" target="_blank" rel="noopener">ver repositorio de github</a>
+        </article>
+        <article class="proyecto-item">
+            <h3>Chat con TCP y seguridad</h3>
+            <p>Chat con medidas de seguridad usando sockets TCP, cifrado, logs y expiración de sesión</p>
+            <ol>
+                <li>Python</li>
+            </ol>
+            <a href="https://github.com/AndreVegaR/ProyectoSeguridad.git" target="_blank" rel="noopener">ver repositorio de github</a>
+        </article>
+    </section>
+    <!-- me gusta mas mis contactos en el pie de pagina que es donde usualmente los pongo y me acostumbre a verlos ahi -->
+</main>
+<footer>
+    <article id="contacto">
+        <h2>contacto</h2>
+        <p>puedes contactarme en los siguientes canales</p>
+        <a href="mailto:julian.izaguirre262758@potros.itson.edu.mx">julian izaguirre correo</a>
+        <a href="tel:+526442514758">Mi telefono es +52 6442514758 </a>
+        <a href="https://wa.me/526442514758?text=Hola%20me%20comunico%20desde%20el%20itsn">manda whatsapp</a>
+        <a href="https://github.com/worleplex" target="_blank" rel="noopener">mi github</a>
+        <a href="https://www.linkedin.com/in/julian-gerardo-izaguirre-menchaca-2a6549433" target="_blank" rel="noopener">mi linkedin</a>
+    </article>
+    <p>&copy; 2026 Derechos reservados julian gerardo</p>
+</footer>
 </body>
 </html>

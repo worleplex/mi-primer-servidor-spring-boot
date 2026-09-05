@@ -1,0 +1,175 @@
+/*
+h1 {
+    font-size: 35px;
+}
+
+#titulo-principal {
+    font-size: 100px;
+}
+
+.title {
+    font-size: 25px;
+}
+ */
+body {
+    font-family: Arial, Tahoma, Verdan-a;
+    background-color: #1e2a3a;
+    color: white;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+    width: 100%;
+}
+
+#formacion {
+    background-color: #573636;
+    border: 5px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    /*margin-top: 10px;
+    margin: 20px 10px 20px 5px
+     */
+}
+
+#sobre-mi {
+    background-color: #2c3e50;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.sobre-mi-imagen {
+    flex: 1;
+}
+
+.destacado {
+    text-align: justify;
+    margin: 0 0 10px 0;
+}
+
+.mifotito {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 15px;
+    margin: 0;
+}
+
+.tabla-bonita {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tabla-bonita th, .tabla-bonita td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabla-bonita th {
+    background-color: darkblue;
+    color: white;
+}
+
+main {
+    margin: 25px;
+    flex: 1;
+}
+
+footer {
+    background: #5a5353;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#titulo-principal {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    font-family: Arial, Tahoma, Verdan-a;
+    font-size: 16px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+nav a {
+    color: #7fd1ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+/** no me acordaba del hover lo bueno es la tabla que esta en ivirtual*/
+nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#habilidades, #formacion {
+    background-color: #2c3e50;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+#contacto {
+    padding-bottom: 15px;
+}
+
+a {
+    color: #7fd1ff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#proyecto {
+    background-color: #2c3e50;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.proyecto-item {
+    flex: 1;
+    min-width: 200px;
+    background-color: #34495e;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#hobbies {
+    background-color: #2c3e50;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
